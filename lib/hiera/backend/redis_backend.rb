@@ -60,7 +60,7 @@ class Hiera
 
       def lookup(key, scope, order_override, resolution_type)
 
-        answer = Backend.empty_answer(resolution_type)
+        answer = nil
 
         Backend.datasources(scope, order_override) do |source|
 
